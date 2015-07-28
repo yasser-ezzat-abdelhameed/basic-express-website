@@ -4,7 +4,7 @@ html
     meta(charset="utf-8")
     meta(http-equiv="X-UA-Compatible" content="IE=edge")
     meta(name="viewport" content="width=device-width, initial-scale=1")
-    title= title
+    title= websiteTitle
     link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
 
@@ -20,14 +20,14 @@ html
           a.navbar-brand(href='#') Project name
         #navbar.collapse.navbar-collapse
           ul.nav.navbar-nav
-            li.active
-              a(href='#') Home
-            li
-              a(href='#about') About
-            li
-              a(href='#contact') Contact
+            li(class=(title === 'Home' ? 'active' : ''))
+              a(href='/') Home
+            li(class=(title === 'About' ? 'active' : ''))
+              a(href='/about') About
+            li(class=(title === 'Contact' ? 'active' : ''))
+              a(href='/contact') Contact
     block content
-      h1= title
-      p Welcome to #{title}
+    footer
+      p &copy; 2015, All Rights Reserved
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
     script(src='javascripts/bootstrap.min.js')

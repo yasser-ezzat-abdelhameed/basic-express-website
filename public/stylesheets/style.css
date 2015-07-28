@@ -1,8 +1,23 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding-top: 50px;
 }
 
 a {
   color: #00B7FF;
+}
+
+.jumbotron{
+  background: url('../images/header-bg.jpg') no-repeat 100%;
+  color: white;
+  text-shadow: 1px 1px #000;
+}
+
+footer{
+  color: white;
+  background: #111;
+  height: 40px;
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 10px;
+  overflow: auto;
 }
